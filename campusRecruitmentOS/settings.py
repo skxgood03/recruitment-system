@@ -80,13 +80,12 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'crdatabase',
+        'NAME': 'recruitmentsystem',
         'HOST': 'localhost',
         'PORT': '3306',
-        'USER': 'crdatabase',
-        # 'USER': 'root',
-        'PASSWORD': 'JftajGdWX87b57SD',
-        # 'PASSWORD': '123456',
+        'USER': 'root',
+        'PASSWORD': 'root',
+
     }
 }
 
