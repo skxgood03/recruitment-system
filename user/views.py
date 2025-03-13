@@ -24,7 +24,7 @@ from pyecharts.charts import Grid, Line, Scatter, Bar, Pie, WordCloud
 from pyecharts.faker import Faker
 
 import re # 正则表达式库
-import jieba # 结巴分词
+# import jieba # 结巴分词
 
 
 
@@ -458,9 +458,10 @@ def Login(request):
         # 接收数据
         username = request.POST.get('username')
         password = request.POST.get('pwd')
+        print(username, password)
 
         # 校验数据
-        if not all([username, password]):
+        if not username or not password:
             return render(request, 'user/login.html', {'errmsg': '请将必填项填写完整'})
 
         # 业务处理:登录校验
